@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<Title>React App</Title>
+	<Meta charset="UTF-8">
+	<script src="../lib/react.js"></script>
+	<script src="../lib/react-dom.js"></script>
+	<script src="../lib/babel.min.js"></script>
+	<script type="text/babel">
+	
+	class HelloWorld extends React.Component{
+		render(){
+			return(
+				<h1>Hello Component</h1>
+			);
+		}
+	}
+	
+	function onload(){
+		ReactDOM.render(<HelloWorld/>,document.getElementById("main"));
+	}
+	</script>
+	
+	</head>
+	<body onload="onload()">
+	<div id="main">
+		
+	</div>
+	</body>
+</html>

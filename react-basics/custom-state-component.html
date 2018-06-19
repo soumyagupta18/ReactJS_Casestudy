@@ -1,0 +1,82 @@
+<html>
+	<head>
+	<Title>React App</Title>
+	<Meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="../lib/react.js"></script>
+	<script src="../lib/react-dom.js"></script>
+	<script src="../lib/babel.min.js"></script>
+	<script type="text/babel">
+	
+	class HelloComponent extends React.Component{
+	constructor(){
+		super();
+		this.state={
+			name:'Soumya',
+			city:'Indore',
+			value:0
+		};
+	}
+	
+	changeName(){
+		this.setState({
+			name:'Sahiba',
+			city:'Gwalior'
+			
+		})
+	}
+	
+	increaseValue(){
+		this.setState({
+		value:this.state.value + 1
+		})
+	}
+	decreaseValue(){
+		this.setState({
+		value:this.state.value - 1
+		})
+	}
+		render(){
+			return(
+				<div>
+				<center>
+					<h1>About:  {this.state.name}</h1>
+					<h2>City Info: {this.state.city}</h2>
+					<button className="btn btn-info" onClick={this.changeName.bind(this)}>Change Info</button>
+					<h4><u>Counter: {this.state.value}</u></h4>
+					<button className="btn btn-info" onClick={this.increaseValue.bind(this)}>Increase Counter</button>
+					<br/>
+					<br/>
+					<button className="btn btn-info" onClick={this.decreaseValue.bind(this)}>Decrease Counter</button>
+					<Message message="This is a message"/>
+					</center>
+				</div>
+			);
+		}
+	}
+	
+	class Message extends React.Component{
+				
+		render(){
+			return(
+				<div>
+					<h2>{this.props.message}</h2>
+				</div>
+			
+			
+			);
+		}
+	}
+	
+	function onload(){
+		ReactDOM.render(<HelloComponent/>,document.getElementById("main"));
+	}
+	</script>
+	
+	</head>
+	<body onload="onload()">
+	<div id="main">
+		
+	</div>
+	</body>
+</html>

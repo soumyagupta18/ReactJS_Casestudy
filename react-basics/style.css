@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#container{
+  margin :0 auto;
+  width:80%;
+  
+}
+.appHeading{
+          margin-top: 50px;
+    /* margin-left: 160px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+   
+   
+}
+.header{
+     height: 105px;
+    display: inline-block;
+  
+ 
+		width:100%;
+	}
+.footer {
+        position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+#headerComponent{
+  float: right;
+  font-family: cursive;
+  width:100%;
+  background-color: gainsboro;
+  
+}
+
+
+.clearFloat{
+  clear: both;
+}
+
+
+
+
+#mainContent{
+  height:600px;
+  margin-top: 30px;
+}
+
+.flex-display {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+.logo {
+margin-bottom: 0;
+    padding-left: 2%;
+    margin-top: 130px;
+    padding-left: 80px;
+    padding-right: 85px;
+}
+.logo2{
+     /*margin-bottom: 0;
+     margin-top: 130px;
+     width: 78%;
+    margin-left: 348px;*/
+    margin-bottom: 0;
+    margin-top: 130px;
+    width: 156%;
+    margin-left: 43px;
+
+}
+.logo3{
+   /*margin-bottom: 0;
+     margin-top: 130px;
+     width: 75%;*/
+    margin-bottom: 0;
+    margin-top: 130px;
+    width: 53%;
+    margin-left: 243px;
+
+}
+.calculatePrice{
+      margin-left: 318px;
+    font-size: 22px;
+}
+
+.product {
+	border: 1px solid black;
+	margin: 10%;
+	padding: 2%;
+}
+.productInCart{
+  	border: 1px solid black;
+	margin: 10%;
+	padding: 2%;
+
+}
+.flex-display {
+	display: flex;
+}
+.icon {
+	font-size: 2em;
+	color: #939292;
+}
+.section2-heading {
+ color: #ff4d4d;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+}
+
+.section2-content {
+    color:firebrick;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+.section2-lorem {
+    margin: 0;
+    font-size: 0.6em;
+    color: gray;
+    padding-bottom: 15px;
+}
+
+.section2-link {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.section2 {
+	padding: 5% 15%;
+}
+
+.flex-3 {
+	flex: 3;
+}
+    

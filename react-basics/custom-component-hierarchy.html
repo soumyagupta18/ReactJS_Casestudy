@@ -1,0 +1,46 @@
+<html>
+	<head>
+	<Title>React App</Title>
+	<Meta charset="UTF-8">
+	<script src="../lib/react.js"></script>
+	<script src="../lib/react-dom.js"></script>
+	<script src="../lib/babel.min.js"></script>
+	<script type="text/babel">
+	
+	class TableComponent extends React.Component{
+		render(){
+			return(
+				<table >
+				<tbody>
+					<RowComponent/>
+					<RowComponent/>
+					<RowComponent/>
+					
+					</tbody>
+				</table>
+			);
+		}
+	}
+	
+	class RowComponent extends React.Component{
+		render(){
+			return(
+				<tr>
+				<td>I am row's first column.</td>
+				</tr>
+			);
+		}
+	}
+	
+	function onload(){
+		ReactDOM.render(<TableComponent/>,document.getElementById("main"));
+	}
+	</script>
+	
+	</head>
+	<body onload="onload()">
+	<div id="main">
+		
+	</div>
+	</body>
+</html>
