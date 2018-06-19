@@ -1,4 +1,4 @@
-# FWF-SQL-DB-Case-Study
+# FWF-REACTJS-Case-Study
 
 ### Abstract
 Among the various files inside ReactBasics there is a Case-Study for Shopping-Application.
